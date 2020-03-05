@@ -1,15 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import Navi from "./Components/Navi"
+import HomePage from './Components/HomePage'
+import ProjectsContainer from './Containers/ProjectsContainer.js'
 // use this syntax. 
-import { Button } from 'semantic-ui-react'; 
+import Button from 'react-bootstrap/Button';
+import {
+  Switch,
+  Route, 
+  BrowserRouter as Router
+} from 'react-router-dom'
+
+
 
 
 function App() {
   return (
-    <div>
-      JUST STARTING
+    <div className="Homepage">
+      <Navi/>
+      <Router>
+        <Switch>
+          <Route exact path="/home">
+            <HomePage/>
+          </Route>
+          <Route exact path="/projects">
+            <ProjectsContainer />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
