@@ -9,6 +9,8 @@ import {
   BrowserRouter as Router
 } from 'react-router-dom'
 
+// need to make 3 seperate sites. mobile/normal/xxl 
+
 function App() {
   return (
     <div className="Homepage">
