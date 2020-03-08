@@ -11,7 +11,7 @@ function HomePage(props) {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg"
+                    src="https://preview.redd.it/tudr38jxdv521.png?width=1546&format=png&auto=webp&s=22a5be840a6363ed4dde054b0b22fb2f1c0a8bfc"
                     alt="First slide"
                 />
                 <Carousel.Caption>
@@ -20,6 +20,21 @@ function HomePage(props) {
                     </h3>
                     <p>
                         First slide Text
+                    </p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src="https://preview.redd.it/tudr38jxdv521.png?width=1546&format=png&auto=webp&s=22a5be840a6363ed4dde054b0b22fb2f1c0a8bfc"
+                    alt="Second slide"
+                />
+                <Carousel.Caption>
+                    <h3>
+                        Label
+                    </h3>
+                    <p>
+                        Second slide Text
                     </p>
                 </Carousel.Caption>
             </Carousel.Item>
