@@ -3,16 +3,11 @@ import './App.css';
 import Navi from "./Components/Navi"
 import HomePage from './Components/HomePage'
 import ProjectsContainer from './Containers/ProjectsContainer.js'
-// use this syntax. 
-import Button from 'react-bootstrap/Button';
 import {
   Switch,
   Route, 
   BrowserRouter as Router
 } from 'react-router-dom'
-
-
-
 
 function App() {
   return (
@@ -21,6 +16,9 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/home">
+            <HomePage/>
+          </Route>
+          <Route exact path="/">
             <HomePage/>
           </Route>
           <Route exact path="/projects">
