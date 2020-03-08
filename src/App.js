@@ -15,9 +15,6 @@ function App() {
       <Navi/>
       <Router>
         <Switch>
-          <Route exact path="/home">
-            <HomePage/>
-          </Route>
           <Route exact path="/">
             <HomePage/>
           </Route>

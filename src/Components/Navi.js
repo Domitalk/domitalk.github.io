@@ -1,18 +1,22 @@
 import React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
+import { Link, BrowserRouter as Router } from 'react-router-dom'
+
 
 function Navi(props) {
 
     return (
         <>
-            <Navbar fixed="top" bg="light" variant="light">
-                <Navbar.Brand href="home">Dominic Chu</Navbar.Brand>
+            <Navbar static="top" bg="light" variant="light">                
+            <Router>
+                <Navbar.Brand as={Link} onTouchStartCapture="/">Dominic Chu</Navbar.Brand>
                 <Nav className="mr-auto">
-                    <Nav.Link href="home">Home</Nav.Link>
-                    <Nav.Link href="projects">Projects</Nav.Link>
-                    <Nav.Link href="about">About</Nav.Link>
+                    <Nav.Link as={Link} to="/">Home</Nav.Link>
+                    <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
+                    <Nav.Link as={Link} to="/about">About</Nav.Link>
                 </Nav>
+                </Router>
             </Navbar>
         </>
     )
