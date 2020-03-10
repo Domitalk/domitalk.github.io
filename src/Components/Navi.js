@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav'
 import { Link, BrowserRouter as Router } from 'react-router-dom'
 
 
-function Navi(props) {
+function Navi() {
     // For some reason I need to refresh with as={Link} to="/" in order to change the view. 
     // Either fix this issue or else leave as a non-SPA
 

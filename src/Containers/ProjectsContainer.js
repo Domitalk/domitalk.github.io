@@ -3,60 +3,14 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Project from '../Components/Project'
+import projectData from '../fillData/projectData.js'
 
-const randomExamples = [
-    {
-        "imageUrl": "", 
-        "header": "Header Example", 
-        "description": "Description Example", 
-        "demoLink": "",
-        "gitFront": "",
-        "gitBack": "", 
-        "liveSite": ""
-    },
-    {
-        "imageUrl": "", 
-        "header": "Header Example", 
-        "description": "Description Example", 
-        "demoLink": "",
-        "gitFront": "",
-        "gitBack": "", 
-        "liveSite": ""
-    }, 
-    {
-        "imageUrl": "", 
-        "header": "Header Example", 
-        "description": "Description Example", 
-        "demoLink": "",
-        "gitFront": "",
-        "gitBack": "", 
-        "liveSite": ""
-    }, 
-    {
-        "imageUrl": "", 
-        "header": "Header Example", 
-        "description": "Description Example", 
-        "demoLink": "",
-        "gitFront": "",
-        "gitBack": "", 
-        "liveSite": ""
-    }, 
-    {
-        "imageUrl": "", 
-        "header": "Header Example", 
-        "description": "Description Example", 
-        "demoLink": "",
-        "gitFront": "",
-        "gitBack": "", 
-        "liveSite": ""
-    }, 
-]
 
-function ProjectsContainer(props) {
+
+function ProjectsContainer() {
 
     const mapAllProjects = () => {
-        // how should I feed the data? 
-        return randomExamples.map((project) => {
+        return projectData.map((project) => {
             return (
                 <Col xs={18} md={9} lg={6}>
                     <Project project={project}/>
@@ -68,7 +22,6 @@ function ProjectsContainer(props) {
     return (
         <Container>
             <Row>
-                {/* <Col xs={18} md={9} lg={6}></Col> */}
                 {mapAllProjects()}
             </Row>
         </Container>
