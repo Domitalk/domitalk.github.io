@@ -3,6 +3,7 @@ import './App.css';
 import Navi from "./Components/Navi"
 import HomePage from './Components/HomePage'
 import ProjectsContainer from './Containers/ProjectsContainer.js'
+import About from './Components/About'
 import {
   Switch,
   Route, 
@@ -18,6 +19,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={HomePage}/>
           <Route path="/projects" exact component={ProjectsContainer}/>
+          <Route path="/about" exact component={About} />
         </Switch>
       </Router>
   );
