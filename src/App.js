@@ -13,19 +13,13 @@ import {
 
 function App() {
   return (
-    <div className="Homepage">
-      <Navi/>
       <Router>
+        <Navi/>
         <Switch>
-          <Route exact path="/">
-            <HomePage/>
-          </Route>
-          <Route exact path="/projects">
-            <ProjectsContainer />
-          </Route>
+          <Route path="/" exact component={HomePage}/>
+          <Route path="/projects" exact component={ProjectsContainer}/>
         </Switch>
       </Router>
-    </div>
   );
 }
 
