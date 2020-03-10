@@ -12,7 +12,7 @@ function ProjectsContainer() {
     const mapAllProjects = () => {
         return projectData.map((project) => {
             return (
-                <Col xs={18} md={9} lg={6}>
+                <Col xs={12} md={6} lg={4.1}>
                     <Project project={project}/>
                 </Col>
             )

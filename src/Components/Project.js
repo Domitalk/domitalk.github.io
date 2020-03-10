@@ -14,7 +14,7 @@ import Card from 'react-bootstrap/Card'
 function Project(props) {
 
     return (
-        <Card>
+        <Card className="mx-2 my-2">
             <Card.Header>{props.project.header}</Card.Header>
             <Card.Img variant="top" src={props.project.imageUrl} />
             <Card.Body>
