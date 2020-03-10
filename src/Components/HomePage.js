@@ -33,9 +33,9 @@ function HomePage() {
     }
 
     return (
-        <Carousel className="maxwidthcar">
+        <Carousel className="maxwidthcar" sm={0}>
             {mapAllCaraItems()}
-        </Carousel>
+        </Carousel>    
     )
 }
 

@@ -5,12 +5,13 @@ import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 
-// Kind of have to hardcode the about section 
 function About() {
     return (
         <Container>
             <Row>
                 <Col xs={{ span: 12, order: 12 }} md={{ span: 6, order: 1 }} lg={{ span: 8, order: 1 }}>
+                    {/* DESCRIP: botton on small, left on med/big */}
+
                     <Card className="my-1">
                         <Card.Header>My Story</Card.Header>
                         <Card.Body>
@@ -28,6 +29,7 @@ function About() {
                         <Card.Header>My Resume</Card.Header>
                         <Card.Img variant="top" src="https://images.template.net/wp-content/uploads/2018/11/Free-Blank-Resume-Template.jpg" />
                         <Card.Body>
+                            {/* onClick download the files */}
                             <Button variant="outline-primary" className="mx-1 my-1">
                                 DOCX
                             </Button>
@@ -39,6 +41,7 @@ function About() {
                 </Col>
                 <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }} lg={{ span: 4, order: 2 }}> 
                     {/* PROFILE: top on small, right on med/big */}
+
                     <Card className="my-1">
                         <Card.Header>About Me</Card.Header>
                         <Card.Img variant="top" src="https://images.gr-assets.com/users/1199327143p6/18045.jpg" />
@@ -56,18 +59,12 @@ function About() {
                     <Card className="my-1">
                         <Card.Header>Links</Card.Header>
                         <Card.Body>
-                            <ul>
-                                <li>
-                                    <Button variant="outline-primary" className="mx-1 my-1">
-                                        Github
-                                    </Button>
-                                </li>
-                                <li>
-                                    <Button variant="outline-primary" className="mx-1 my-1">
-                                        LinkedIn
-                                    </Button>
-                                </li>
-                            </ul>
+                            <Button variant="outline-primary" className="mx-1 my-1">
+                                Github
+                            </Button>
+                            <Button variant="outline-primary" className="mx-1 my-1">
+                                LinkedIn
+                            </Button>
                         </Card.Body>
                     </Card>
                 </Col>
