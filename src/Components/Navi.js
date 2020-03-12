@@ -13,7 +13,7 @@ function Navi() {
             <Navbar static="top" bg="light" variant="light">                
                 <Navbar.Brand >Dominic Chu</Navbar.Brand>
                 <Nav className="mr-auto">
-                    <Nav.Link href="/portfolio/">Home</Nav.Link>
+                    <Nav.Link href="/portfolio">Home</Nav.Link>
                     <Nav.Link href="/portfolio/projects">Projects</Nav.Link>
                     <Nav.Link href="/portfolio/about">About</Nav.Link>
                 </Nav>

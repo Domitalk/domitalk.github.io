@@ -17,9 +17,9 @@ function App() {
       <Router>
         <Navi/>
         <Switch>
-          <Route path="portfolio/" exact component={HomePage}/>
-          <Route path="portfolio/projects" exact component={ProjectsContainer}/>
-          <Route path="portfolio/about" exact component={About} />
+          <Route path="/portfolio" exact component={HomePage}/>
+          <Route path="/portfolio/projects" exact component={ProjectsContainer}/>
+          <Route path="/portfolio/about" exact component={About} />
         </Switch>
       </Router>
   );
