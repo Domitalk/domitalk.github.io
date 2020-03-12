@@ -17,10 +17,10 @@ function About() {
                         <Card.Body>
                             <Card.Text>
                                 <p>
-                                    Where I have been
+                                    A recent Flatiron School graduate with a passion for coding and a background in education.
                                 </p>
                                 <p>
-                                    Where I want to go
+                                    Wether it's frontend with JavaScript or backend with Ruby, I just love learning new technologies that help make better code.
                                 </p>
                             </Card.Text>
                         </Card.Body>
@@ -44,14 +44,14 @@ function About() {
 
                     <Card className="my-1">
                         <Card.Header>About Me</Card.Header>
-                        <Card.Img variant="top" src="https://images.gr-assets.com/users/1199327143p6/18045.jpg" />
+                        <Card.Img variant="top" src="https://res.cloudinary.com/dwazq8zps/image/upload/v1584021356/rjxnmkljufeqadsc9k1r.jpg" />
                         <Card.Body>
                             <Card.Text>
                                 <p>
-                                    1. Skill #1
+                                    JavaScript, React.js, Ruby, Rails, Java, and SQL.
                                 </p>
                                 <p>
-                                    2. Skill #2
+                                    My coding journey started with Ruby and after learning how to make a backend with Rails I dove into JavaScript. Recently I've been making applications with React.js and learning Java on my own. 
                                 </p>
                             </Card.Text>
                         </Card.Body>
@@ -59,11 +59,14 @@ function About() {
                     <Card className="my-1">
                         <Card.Header>Links</Card.Header>
                         <Card.Body>
-                            <Button variant="outline-primary" className="mx-1 my-1">
+                            <Button variant="outline-primary" className="mx-1 my-1" href="http://github.com/domitalk" target="_blank">
                                 Github
                             </Button>
-                            <Button variant="outline-primary" className="mx-1 my-1">
+                            <Button variant="outline-primary" className="mx-1 my-1" href="https://www.linkedin.com/in/dominic-m-chu" target="_blank">
                                 LinkedIn
+                            </Button>
+                            <Button variant="outline-primary" className="mx-1 my-1" href="https://medium.com/@dominic.m.chu" target="_blank">
+                                Blog
                             </Button>
                         </Card.Body>
                     </Card>
