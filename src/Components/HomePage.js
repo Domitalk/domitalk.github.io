@@ -5,6 +5,8 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
 import Card from 'react-bootstrap/Card'
+import { Link } from 'react-router-dom'
+import Button from 'react-bootstrap/Button'
 
 function HomePage() {
 
@@ -35,7 +37,9 @@ function HomePage() {
                                 This is a wider card with supporting text below as a natural lead-in to
                                 additional content. This content is a little bit longer.
                                 </Card.Text>
-                                <Card.Text>Last updated 3 mins ago</Card.Text>
+                                <Card.Text>
+                                    <Button as={Link} to="/portfolio/projects">Projects</Button>
+                                </Card.Text>
                             </Card.ImgOverlay>
                         </Card>
                     </Col>
@@ -48,7 +52,9 @@ function HomePage() {
                                 This is a wider card with supporting text below as a natural lead-in to
                                 additional content. This content is a little bit longer.
                                 </Card.Text>
-                                <Card.Text>Last updated 3 mins ago</Card.Text>
+                                <Card.Text>
+                                    <Button as={Link} to="/portfolio/about">About</Button>
+                                </Card.Text>
                             </Card.ImgOverlay>
                         </Card>
                     </Col>

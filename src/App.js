@@ -9,6 +9,7 @@ import {
   Route, 
   BrowserRouter as Router
 } from 'react-router-dom'
+import ScrollToTop from './Utility/ScrollToTop'
 
 // need to make 3 seperate sites. mobile/normal/xxl 
 
@@ -16,6 +17,7 @@ function App() {
   return (
       <Router>
         <Navi/>
+        <ScrollToTop /> 
         <Switch>
           <Route path="/portfolio" exact component={HomePage}/>
           <Route path="/portfolio/projects" exact component={ProjectsContainer}/>
