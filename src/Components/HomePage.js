@@ -32,10 +32,9 @@ function HomePage() {
                         <Card className="bg-dark text-white mx-1 my-1">
                             <Card.Img src="https://res.cloudinary.com/dwazq8zps/image/upload/v1583940185/rbkhzipvosexmgvcxswh.jpg" alt="Card image" />
                             <Card.ImgOverlay>
-                                <Card.Title>Card title</Card.Title>
+                                <Card.Title>Languages</Card.Title>
                                 <Card.Text>
-                                This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.
+                                    Extensive experience with JS and Ruby. JS including Redux and modern React functional components using hooks. Ruby with ActiveRecord and Rails. 
                                 </Card.Text>
                                 <Card.Text>
                                     <Button as={Link} to="/portfolio/projects">Projects</Button>
