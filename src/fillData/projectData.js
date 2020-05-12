@@ -1,6 +1,6 @@
 const projectData = [
     {
-        "imageUrl": "https://res.cloudinary.com/dwazq8zps/image/upload/v1583940185/rbkhzipvosexmgvcxswh.jpg", 
+        "imageUrl": "https://res.cloudinary.com/dwazq8zps/image/upload/v1589226114/hht1k5kiewm3wnm0pntf.png", 
         "header": "At Anon", 
         "description": "Image hosting and sharing application. Created using React and Material UI on the frontend and Ruby on Rails for the backend. Hosted on Heroku, Github and images hosted on Cloudinary.", 
         "demoLink": "",
