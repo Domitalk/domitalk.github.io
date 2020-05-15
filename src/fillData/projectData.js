@@ -19,11 +19,11 @@ const projectData = [
     }, 
     {
         "imageUrl": "", 
-        "header": "Header Example", 
-        "description": "Description Example", 
+        "header": "Full Stack Quest", 
+        "description": "A JavaScript RPG created with Phaser 3.0 library on the Canvas element. Frontend JavaScript and backend Ruby on Rails.", 
         "demoLink": "",
-        "gitFront": "",
-        "gitBack": "", 
+        "gitFront": "https://github.com/Domitalk/SecondRPG",
+        "gitBack": "https://github.com/Domitalk/SecondBackend", 
         "liveSite": ""
     }, 
     {
