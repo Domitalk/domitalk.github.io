@@ -13,15 +13,15 @@ function HomePage() {
 
     return (
         <div>
-            <Jumbotron fluid>
+            <Jumbotron fluid >
                 <Container>
                     <Row>
                         <Col xs={{ span: 12, order: 2}} md={{ span: 6, order: 1 }} lg={{ span: 7, order: 1 }}>
-                            <h1>Fluid Jumbotron</h1>
-                            <p>Put some stuff in here</p>
+                            <h1>Full Stack Developer</h1>
+                            <p>Passion for code</p>
                         </Col>
                         <Col xs={{ span: 12, order: 1}} md={{ span: 6, order: 2}} lg={{ span: 5, order: 2}}>
-                            <Image src={"https://res.cloudinary.com/dwazq8zps/image/upload/v1583940185/rbkhzipvosexmgvcxswh.jpg"} thumbnail /> 
+                            <Image src={"https://res.cloudinary.com/dwazq8zps/image/upload/v1590607921/yproxh4ixxv7ncmzqjzv.jpg"} thumbnail /> 
                         </Col>
                     </Row>
                 </Container>
@@ -32,7 +32,7 @@ function HomePage() {
                         <Card className="bg-dark text-white mx-1 my-1">
                             <Card.Img src="https://res.cloudinary.com/dwazq8zps/image/upload/v1583940185/rbkhzipvosexmgvcxswh.jpg" alt="Card image" />
                             <Card.ImgOverlay>
-                                <Card.Title>Current Porject</Card.Title>
+                                <Card.Title>Current Project</Card.Title>
                                 <Card.Text>
                                     
                                 </Card.Text>
