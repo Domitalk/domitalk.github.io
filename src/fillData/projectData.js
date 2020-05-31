@@ -12,7 +12,7 @@ const projectData = [
         "imageUrl": "", 
         "header": "The General Store", 
         "description": "Shopping cart site with JWT and secure BCrypt login. Created with React on the frontend and Ruby on Rails for the backend.", 
-        "demoLink": "",
+        "demoLink": " ",
         "gitFront": "https://github.com/Domitalk/theGeneralStoreFrontend",
         "gitBack": "https://github.com/Domitalk/theGeneralStoreBackend", 
         "liveSite": ""
