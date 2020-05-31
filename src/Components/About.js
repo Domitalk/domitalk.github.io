@@ -17,11 +17,9 @@ function About() {
                         <Card.Body>
                             <Card.Text>
                                 <p>
-                                    A recent Flatiron School graduate with a passion for coding and a background in education.
+                                    Full Stack Dev with a background in education. I love learning new tech and most recently in the rabbit hole of smart contracts. 
                                 </p>
-                                <p>
-                                    Wether it's frontend with JavaScript or backend with Ruby, I just love learning new technologies that help make better code.
-                                </p>
+                                
                             </Card.Text>
                         </Card.Body>
                     </Card>
