@@ -27,6 +27,13 @@ function HomePage() {
                 </Container>
             </Jumbotron>
             <Container>
+                <Row> 
+                    <Col xs={{spand:12, order: 1}} md={{ span: 12, order: 1}} lg={{ span:12, order: 1}}>
+                        <Card border="secondary">
+                            <Card.Text className="text-center">Recent Publications/Projects</Card.Text>
+                        </Card>
+                    </Col>
+                </Row>
                 <Row>
                     <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 1 }} lg={{ span: 6, order: 1 }}>
                         <Card className="bg-dark text-white mx-1 my-1">
