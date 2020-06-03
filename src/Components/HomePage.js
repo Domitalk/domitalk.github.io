@@ -30,7 +30,8 @@ function HomePage() {
                 <Row>
                     <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 1 }} lg={{ span: 6, order: 1 }}>
                         <Card className="bg-dark text-white mx-1 my-1">
-                            <Card.Img src="https://res.cloudinary.com/dwazq8zps/image/upload/v1583940185/rbkhzipvosexmgvcxswh.jpg" alt="Card image" />
+                            {/* <Card.Img src="https://res.cloudinary.com/dwazq8zps/image/upload/v1583940185/rbkhzipvosexmgvcxswh.jpg" alt="Card image" /> */}
+                            <Card.Img src="" alt="Card image" />
                             <Card.ImgOverlay>
                                 <Card.Title>Current Project</Card.Title>
                                 <Card.Text>
@@ -44,7 +45,7 @@ function HomePage() {
                     </Col>
                     <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 2 }} lg={{ span: 6, order: 2 }}>
                         <Card className="bg-dark text-white mx-1 my-1">
-                            <Card.Img src="https://res.cloudinary.com/dwazq8zps/image/upload/v1583940185/rbkhzipvosexmgvcxswh.jpg" alt="Card image" />
+                            <Card.Img src="" alt="Card image" />
                             <Card.ImgOverlay>
                                 <Card.Title>Card title</Card.Title>
                                 <Card.Text>
