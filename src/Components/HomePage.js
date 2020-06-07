@@ -52,6 +52,9 @@ function HomePage() {
                     </Col>
                     <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 2 }} lg={{ span: 6, order: 2 }}>
                         <Card className="bg-dark text-white mx-1 my-1">
+                            {/* <Card.Text>
+                                Testing
+                            </Card.Text> */}
                             <Card.Img src="" alt="Card image" />
                             <Card.ImgOverlay>
                                 <Card.Title>Card title</Card.Title>
