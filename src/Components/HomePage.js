@@ -18,7 +18,7 @@ function HomePage() {
                     <Row>
                         <Col xs={{ span: 12, order: 2}} md={{ span: 6, order: 1 }} lg={{ span: 7, order: 1 }}>
                             <h1>Full Stack Developer</h1>
-                            <p>Passion for code</p>
+                            <p></p>
                         </Col>
                         <Col xs={{ span: 12, order: 1}} md={{ span: 6, order: 2}} lg={{ span: 5, order: 2}}>
                             <Image src={"https://res.cloudinary.com/dwazq8zps/image/upload/v1590607921/yproxh4ixxv7ncmzqjzv.jpg"} thumbnail /> 
