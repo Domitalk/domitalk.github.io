@@ -17,6 +17,7 @@ function About() {
                         <Card.Body>
                             <Card.Text>
                                 <p>
+                                    
                                     Full Stack Dev with a background in education. I love learning new tech and most recently in the rabbit hole of smart contracts. 
                                 </p>
                                 
