@@ -13,7 +13,15 @@ function HomePage() {
 
     return (
         <>
-            <Jumbotron fluid >
+            <Row id="Home">
+                <div className="empty"/>
+            </Row>
+            <Row>
+                <div className="empty"/>
+            </Row>
+
+
+            <Jumbotron fluid id="mainjumbo">
                 <Container>
                     <Row>
                         <Col xs={{ span: 12, order: 2}} md={{ span: 6, order: 1 }} lg={{ span: 7, order: 1 }}>

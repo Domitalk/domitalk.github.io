@@ -7,7 +7,20 @@ import Button from 'react-bootstrap/Button'
 
 function About() {
     return (
-        <Container>
+        <Container id="About">
+            <Row>
+                <div className="empty"/>
+            </Row>
+            <Row> 
+                <Col xs={{spand:12, order: 1}} md={{ span: 12, order: 1}} lg={{ span:12, order: 1}}>
+                    <Card border="secondary">
+                        <Card.Text className="text-center">About Me</Card.Text>
+                    </Card>
+                </Col>
+            </Row>
+            <Row>
+                <div className="empty"/>
+            </Row>
             <Row>
                 <Col xs={{ span: 12, order: 12 }} md={{ span: 6, order: 1 }} lg={{ span: 8, order: 1 }}>
                     {/* DESCRIP: botton on small, left on med/big */}
