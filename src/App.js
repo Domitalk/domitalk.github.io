@@ -16,15 +16,25 @@ import ScrollToTop from './Utility/ScrollToTop'
 function App() {
   return (
       <Router>
-        <Navi/>
-        <ScrollToTop /> 
-        <Switch>
-          <Route path="/portfolio" exact component={HomePage}/>
-          <Route path="/portfolio/projects" exact component={ProjectsContainer}/>
-          <Route path="/portfolio/about" exact component={About} />
-        </Switch>
+        <Navi />
+        <ScrollToTop />
+        <HomePage />
+        <About />
+        <ProjectsContainer />
       </Router>
   );
 }
+
+
+
+// {/* <Router>
+//         <Navi/>
+//         <ScrollToTop /> 
+//         <Switch>
+//           <Route path="/portfolio" exact component={HomePage}/>
+//           <Route path="/portfolio/projects" exact component={ProjectsContainer}/>
+//           <Route path="/portfolio/about" exact component={About} />
+//         </Switch>
+//       </Router> */}
 
 export default App;
