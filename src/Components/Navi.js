@@ -16,6 +16,7 @@ function Navi() {
                 <Nav className="mr-auto">
                     <Nav.Link href="#Projects">Projects</Nav.Link>
                     <Nav.Link href="#About">About Me</Nav.Link>
+                    <Nav.Link href="#Blogs">Blog Posts</Nav.Link>
                 </Nav>
             </Navbar>
         </>

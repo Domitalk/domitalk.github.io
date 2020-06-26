@@ -3,6 +3,7 @@ import './App.css';
 import Navi from "./Components/Navi"
 import HomePage from './Components/HomePage'
 import ProjectsContainer from './Containers/ProjectsContainer.js'
+import BlogsContainer from './Containers/BlogsContainer.js'
 import About from './Components/About'
 import {
   Switch,
@@ -22,6 +23,7 @@ function App() {
         <HomePage />
         <About />
         <ProjectsContainer />
+        <BlogsContainer />
       </Router>
   );
 }

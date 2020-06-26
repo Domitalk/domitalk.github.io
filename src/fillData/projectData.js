@@ -6,7 +6,8 @@ const projectData = [
         "demoLink": "",
         "gitFront": "https://github.com/Domitalk/atanon",
         "gitBack": "https://github.com/Domitalk/atanon-api", 
-        "liveSite": "https://domitalk.github.io/atanon"
+        "liveSite": "https://domitalk.github.io/atanon",
+        "bloglink": ""
     },
     {
         "imageUrl": "", 
@@ -15,7 +16,8 @@ const projectData = [
         "demoLink": " ",
         "gitFront": "https://github.com/Domitalk/theGeneralStoreFrontend",
         "gitBack": "https://github.com/Domitalk/theGeneralStoreBackend", 
-        "liveSite": ""
+        "liveSite": "",
+        "bloglink": ""
     }, 
     {
         "imageUrl": "", 
@@ -24,26 +26,21 @@ const projectData = [
         "demoLink": "",
         "gitFront": "https://github.com/Domitalk/SecondRPG",
         "gitBack": "https://github.com/Domitalk/SecondBackend", 
-        "liveSite": ""
-    }, 
-    {
-        "imageUrl": "", 
-        "header": "Header Example", 
-        "description": "Description Example", 
-        "demoLink": "",
-        "gitFront": "",
-        "gitBack": "", 
-        "liveSite": ""
-    }, 
-    {
-        "imageUrl": "", 
-        "header": "Header Example", 
-        "description": "Description Example", 
-        "demoLink": "",
-        "gitFront": "",
-        "gitBack": "", 
-        "liveSite": ""
-    }, 
+        "liveSite": "",
+        "bloglink": ""
+    }
 ]
 
 export default projectData
+
+
+// {
+//     "imageUrl": "", 
+//     "header": "Header Example", 
+//     "description": "Description Example", 
+//     "demoLink": "",
+//     "gitFront": "",
+//     "gitBack": "", 
+//     "liveSite": "",
+//     "bloglink": ""
+// },
