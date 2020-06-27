@@ -38,7 +38,7 @@ function Project(props) {
                 {(props.project.gitFront.length > 1) ? makeButton(props.project.gitFront, "Github Front") : null}
                 {(props.project.gitBack.length > 1) ? makeButton(props.project.gitBack, "Github Back") : null}
                 {(props.project.liveSite.length > 1) ? makeButton(props.project.liveSite, "Live Site") : null}
-                {(props.project.bloglink.length > 1) ? makeButton(props.project.blogLink, "Read") : null}
+                {(props.project.bloglink.length > 1) ? makeButton(props.project.bloglink, "Read on Medium") : null}
 
             </>
         )

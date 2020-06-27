@@ -2,6 +2,8 @@ import React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import { Link } from 'react-router-dom'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
 
 
 
@@ -12,11 +14,11 @@ function Navi() {
     return (
         <>
             <Navbar fixed="top" bg="light" variant="light">
-                <Navbar.Brand href="#Home">Dominic M. Chu</Navbar.Brand>
+                <Navbar.Brand as={AnchorLink} href="#Home">Dominic M. Chu</Navbar.Brand>
                 <Nav className="mr-auto">
-                    <Nav.Link href="#Projects">Projects</Nav.Link>
-                    <Nav.Link href="#About">About Me</Nav.Link>
-                    <Nav.Link href="#Blogs">Blog Posts</Nav.Link>
+                    <Nav.Link as={AnchorLink} href="#About">About Me</Nav.Link>
+                    <Nav.Link as={AnchorLink} href="#Projects">Projects</Nav.Link>
+                    <Nav.Link as={AnchorLink} href="#Blogs">Blog Posts</Nav.Link>
                 </Nav>
             </Navbar>
         </>
