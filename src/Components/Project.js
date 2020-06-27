@@ -34,7 +34,7 @@ function Project(props) {
     const createButtons = () => {
         return (
             <>
-                {(props.project.demoLink.length > 1) ? makeButton(props.project.demoLink, "Demo") : null}
+                {(props.project.demoLink.length > 1) ? makeButton(props.project.demoLink, "Demo Video") : null}
                 {(props.project.gitFront.length > 1) ? makeButton(props.project.gitFront, "Github Front") : null}
                 {(props.project.gitBack.length > 1) ? makeButton(props.project.gitBack, "Github Back") : null}
                 {(props.project.liveSite.length > 1) ? makeButton(props.project.liveSite, "Live Site") : null}
