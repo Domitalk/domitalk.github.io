@@ -4,6 +4,11 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
+import { Javascript } from '@styled-icons/boxicons-logos/Javascript'
+
+
+
+
 
 function About() {
     return (
@@ -60,8 +65,11 @@ function About() {
                         <Card.Body>
                             <Card.Text>
                                 <p>
-                                    JavaScript, React.js, Ruby, Rails, Java, and SQL.
+                                    <Javascript size="48" />
                                 </p>
+                                {/* <p>
+                                    JavaScript, React.js, Ruby, Rails, Java, and SQL.
+                                </p> */}
                                 <p>
                                     My coding journey started with Ruby and after learning how to make a backend with Rails I dove into JavaScript. Recently I've been making applications with React.js and learning Java on my own. 
                                 </p>
@@ -71,6 +79,7 @@ function About() {
                     <Card className="my-1">
                         <Card.Header>Links</Card.Header>
                         <Card.Body>
+                            {/* <GithubSquare onClick={() => window.open("http://github.com/domitalk", "_blank")} size="48" /> */}
                             <Button variant="outline-primary" className="mx-1 my-1" href="http://github.com/domitalk" target="_blank">
                                 Github
                             </Button>

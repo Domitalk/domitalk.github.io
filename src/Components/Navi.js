@@ -1,15 +1,13 @@
 import React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 
 
 
 function Navi() {
-    // For some reason I need to refresh with as={Link} to="/" in order to change the view. 
-    // Either fix this issue or else leave as a non-SPA
 
     return (
         <>
