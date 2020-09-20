@@ -4,9 +4,12 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
-import { Javascript } from '@styled-icons/boxicons-logos/Javascript'
-
-
+import { Javascript } from '@styled-icons/simple-icons/Javascript'
+import { ReactLogo } from '@styled-icons/simple-icons/ReactLogo'
+import { Ruby } from '@styled-icons/simple-icons/Ruby'
+import { Rubyonrails } from '@styled-icons/simple-icons/Rubyonrails'
+import { Redux } from '@styled-icons/simple-icons/Redux'
+import { Java } from '@styled-icons/fa-brands/Java'
 
 
 
@@ -16,34 +19,24 @@ function About() {
             <Row>
                 <div className="empty"/>
             </Row>
+
             <Row> 
-                <Col xs={{spand:12, order: 1}} md={{ span: 12, order: 1}} lg={{ span:12, order: 1}}>
+                {/* <Col xs={{spand:12, order: 1}} md={{ span: 12, order: 1}} lg={{ span:12, order: 1}}>
                     <Card >
                         <Card.Text as="h3" className="text-center">About Me</Card.Text>
                     </Card>
+                </Col> */}
+                <Col xs={{spand:12, order: 1}} md={{ span: 12, order: 1}} lg={{ span:12, order: 1}}>
+                        <h3 className="text-center">About Me</h3>
                 </Col>
-            </Row>
-            <Row>
-                <div className="empty"/>
+
             </Row>
             <Row>
                 <Col xs={{ span: 12, order: 12 }} md={{ span: 6, order: 1 }} lg={{ span: 8, order: 1 }}>
                     {/* DESCRIP: botton on small, left on med/big */}
 
                     <Card className="my-1">
-                        <Card.Header>My Story</Card.Header>
-                        <Card.Body>
-                            <Card.Text>
-                                <p>
-                                    
-                                    Full Stack Dev with a background in education. I love learning new tech and most recently in the rabbit hole of smart contracts. 
-                                </p>
-                                
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                    <Card className="my-1">
-                        <Card.Header>My Resume</Card.Header>
+                        <Card.Header>Resume</Card.Header>
                         <Card.Img variant="top" src="https://images.template.net/wp-content/uploads/2018/11/Free-Blank-Resume-Template.jpg" />
                         <Card.Body>
                             {/* onClick download the files */}
@@ -60,12 +53,17 @@ function About() {
                     {/* PROFILE: top on small, right on med/big */}
 
                     <Card className="my-1">
-                        <Card.Header>About Me</Card.Header>
+                        <Card.Header>Dominic M. Chu</Card.Header>
                         <Card.Img variant="top" src="https://res.cloudinary.com/dwazq8zps/image/upload/v1584021356/rjxnmkljufeqadsc9k1r.jpg" />
                         <Card.Body>
                             <Card.Text>
                                 <p>
-                                    <Javascript size="48" />
+                                    <Javascript size="40" />
+                                    <ReactLogo size="40" />
+                                    <Ruby size="40" />
+                                    <Rubyonrails size="40" />
+                                    <Redux size="40" />
+                                    <Java size="40" />
                                 </p>
                                 {/* <p>
                                     JavaScript, React.js, Ruby, Rails, Java, and SQL.

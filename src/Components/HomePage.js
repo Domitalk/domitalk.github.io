@@ -34,6 +34,7 @@ function HomePage() {
                     </Row>
                 </Container>
             </Jumbotron>
+
         </>
     )
 }

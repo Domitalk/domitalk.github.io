@@ -28,14 +28,15 @@ function BlogsContainer() {
             </Row>
             <Row> 
                 <Col xs={{spand:12, order: 1}} md={{ span: 12, order: 1}} lg={{ span:12, order: 1}}>
-                    <Card >
+                    <h3 className="text-center">Recent Blogs</h3>
+                    {/* <Card >
                         <Card.Text as="h3" className="text-center">Recent Blogs</Card.Text>
-                    </Card>
+                    </Card> */}
                 </Col>
             </Row>
-            <Row>
+            {/* <Row>
                 <div className="empty"/>
-            </Row>
+            </Row> */}
             <Row>
                 {mapAllProjects()}
             </Row>
