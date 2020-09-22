@@ -9,31 +9,41 @@ import { Link } from 'react-router-dom'
 import Button from 'react-bootstrap/Button'
 
 function HomePage() {
+    
+    const imgUrl = "https://domitalk.s3.us-east-2.amazonaws.com/20200922_170425.jpg"
 
-
+    const bannerImage = {
+        objectFit: 'scale-down',
+    };
+      
     return (
         <>
             <Row id="Home">
                 <div className="empty"/>
             </Row>
-            <Row>
-                <div className="empty"/>
-            </Row>
+            {/* <img src={imgUrl} id="mainBanner" /> */}
+            <Image 
+                // style={bannerImage}
+                src={imgUrl}
+                fluid
+            />
 
-
-            <Jumbotron fluid id="mainjumbo">
+            {/* <Jumbotron style={jumboStyle} fluid id="mainjumbo">
                 <Container>
                     <Row>
                         <Col xs={{ span: 12, order: 2}} md={{ span: 12, order: 1 }} lg={{ span: 12, order: 1 }}>
                             <h1>Full Stack Web Developer</h1>
                             <p></p>
                         </Col>
-                        {/* <Col xs={{ span: 12, order: 1}} md={{ span: 6, order: 2}} lg={{ span: 5, order: 2}}>
-                            <Image src={"https://res.cloudinary.com/dwazq8zps/image/upload/v1593112606/qctnmk57wmiij6ooymsv.png"} thumbnail /> 
-                        </Col> */}
                     </Row>
                 </Container>
-            </Jumbotron>
+            </Jumbotron> */}
+
+            {/* <Col xs={{ span: 12, order: 1}} md={{ span: 6, order: 2}} lg={{ span: 5, order: 2}}>
+                <Image src={"https://domitalk.s3.us-east-2.amazonaws.com/20200920_151117.jpg"} fluid /> 
+            </Col> */}
+            
+            
 
         </>
     )

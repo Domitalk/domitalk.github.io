@@ -54,7 +54,10 @@ function About() {
 
                     <Card className="my-1">
                         <Card.Header>Dominic M. Chu</Card.Header>
-                        <Card.Img variant="top" src="https://res.cloudinary.com/dwazq8zps/image/upload/v1584021356/rjxnmkljufeqadsc9k1r.jpg" />
+                        
+                        <Card.Img variant="top" src="https://domitalk.s3.us-east-2.amazonaws.com/20200920_151350.jpg" />
+
+                        {/* <Card.Img variant="top" src="https://res.cloudinary.com/dwazq8zps/image/upload/v1584021356/rjxnmkljufeqadsc9k1r.jpg" /> */}
                         <Card.Body>
                             <Card.Text>
                                 <p>
