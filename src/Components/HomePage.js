@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 
 function HomePage() {
-    const imgUrl = "https://domitalk.s3.us-east-2.amazonaws.com/20200922_170425.jpg"
+    const imgUrl = "https://domitalk.s3.us-east-2.amazonaws.com/20200923_151615.jpg"
     return (
         <>
             <Row id="Home">

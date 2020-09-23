@@ -28,7 +28,7 @@ function ProjectsContainer() {
             </Row>
             <Row> 
                 <Col xs={{spand:12, order: 1}} md={{ span: 12, order: 1}} lg={{ span:12, order: 1}}>
-                    <h3 className="text-center">Recent Projects</h3>
+                    <h3 className="text-center">Projects</h3>
 
                     {/* <Card >
                         <Card.Text as="h3" className="text-center">Recent Projects</Card.Text>
