@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState, useRef } from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
-import styled from 'styled-components'
+import Overlay from 'react-bootstrap/Overlay'
+// import Tooltip from 'react-boostrap/Tooltip'
 
+import styled from 'styled-components'
 import { Javascript } from '@styled-icons/simple-icons/Javascript'
 import { ReactLogo } from '@styled-icons/simple-icons/ReactLogo'
 import { Ruby } from '@styled-icons/simple-icons/Ruby'
@@ -14,6 +16,8 @@ import { Redux } from '@styled-icons/simple-icons/Redux'
 import { Java } from '@styled-icons/fa-brands/Java'
 import { Github } from '@styled-icons/simple-icons/Github'
 import { Linkedin } from '@styled-icons/simple-icons/Linkedin'
+import { Medium } from '@styled-icons/simple-icons/Medium'
+import { Email } from '@styled-icons/material-sharp/Email'
 
 function About() {
     const profilePicture = "https://domitalk.s3.us-east-2.amazonaws.com/20200923_152629.jpg"
@@ -24,6 +28,16 @@ function About() {
     const LinkedinIcon = styled(Linkedin)`
         color: black
     `
+    const MediumIcon = styled(Medium)`
+        color: black
+    `
+    const EmailIcon = styled(Email)`
+        color: black
+    `
+
+    const [show, setShow] = useState(false)
+    const target = useRef(null)
+
     return (
         <Container id="About">
             <Row>
@@ -70,7 +84,7 @@ function About() {
                         {/* <Card.Img variant="top" src="https://res.cloudinary.com/dwazq8zps/image/upload/v1584021356/rjxnmkljufeqadsc9k1r.jpg" /> */}
                         <Card.Body>
                             <Card.Text>
-                                <div>
+                                <div id="spaced-icons" >
                                     <Javascript size="40" /> 
                                     <ReactLogo size="40" /> 
                                     <Ruby size="40" /> 
@@ -89,22 +103,39 @@ function About() {
                     </Card>
                     <Card className="my-1">
                         <Card.Header>Links</Card.Header>
-                        <Card.Body>
+                        <Card.Body id="spaced-links">
                             <a href="http://github.com/domitalk" target="_blank" >
-                                <GithubIcon size="48" />
-                            </a>
+                                <GithubIcon size="48" /> 
+                            </a> 
                             <a href="https://www.linkedin.com/in/dominic-m-chu" target="_blank">
-                                <LinkedinIcon size="48" />
+                                <LinkedinIcon size="48" /> 
+                            </a> 
+                            <a href="https://medium.com/@dominic.m.chu" target="_blank">
+                                <MediumIcon size="48" /> 
                             </a>
-                            {/* <Button variant="outline-primary" className="mx-1 my-1" href="http://github.com/domitalk" target="_blank">
-                                Github
-                            </Button>
-                            <Button variant="outline-primary" className="mx-1 my-1" href="https://www.linkedin.com/in/dominic-m-chu" target="_blank">
-                                LinkedIn
-                            </Button>
-                            <Button variant="outline-primary" className="mx-1 my-1" href="https://medium.com/@dominic.m.chu" target="_blank">
-                                Blog
-                            </Button> */}
+                            <a ref={target} onClick={() => setShow(!show)}>
+                                <EmailIcon size="48" />
+                            </a>
+                            <Overlay target={target.current} show={show} placement="top">
+                                {({ placement, arrowProps, show: _show, popper, ...props }) => (
+                                    <div
+                                        {...props}
+                                        style={{
+                                            backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                                            padding: '2px 10px',
+                                            color: 'white',
+                                            borderRadius: 3,
+                                            ...props.style,
+                                        }}
+                                    >
+                                        dominic.m.chu@gmail.com
+                                    </div>
+                                )}
+                            </Overlay>
+                            {/* <a target="_top" href={"mailto:dominic.m.chu@gmail.com"} >
+                                <EmailIcon size="48" />
+                            </a> */}
+
                         </Card.Body>
                     </Card>
                 </Col>

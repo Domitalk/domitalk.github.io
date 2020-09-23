@@ -1,3 +1,13 @@
 div.empty {
     height: 8vh;
 }
+
+#spaced-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+#spaced-links {
+    display: flex;
+    justify-content: space-around;
+}
