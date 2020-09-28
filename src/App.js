@@ -3,7 +3,6 @@ import './App.css';
 import Navi from "./Components/Navi"
 import HomePage from './Components/HomePage'
 import ProjectsContainer from './Containers/ProjectsContainer.js'
-import BlogsContainer from './Containers/BlogsContainer.js'
 import About from './Components/About'
 import {
   // Switch,
@@ -11,9 +10,8 @@ import {
   BrowserRouter as Router
 } from 'react-router-dom'
 import ScrollToTop from './Utility/ScrollToTop'
-
-
-// need to make 3 seperate sites. mobile/normal/xxl 
+import projectData from './fillData/projectData.js'
+import blogData from './fillData/blogData.js'
 
 function App() {
   return (
@@ -22,22 +20,12 @@ function App() {
         <ScrollToTop />
         <HomePage />
         <About />
-        <ProjectsContainer />
-        <BlogsContainer />
+        <ProjectsContainer projectData={projectData} header={"Projects"} />
+        <ProjectsContainer projectData={blogData} header={"Blogs"}/>
+        {/* <BlogsContainer /> */}
+        <div className="empty"/>
+
       </Router>
   );
 }
-
-
-
-// {/* <Router>
-//         <Navi/>
-//         <ScrollToTop /> 
-//         <Switch>
-//           <Route path="/portfolio" exact component={HomePage}/>
-//           <Route path="/portfolio/projects" exact component={ProjectsContainer}/>
-//           <Route path="/portfolio/about" exact component={About} />
-//         </Switch>
-//       </Router> */}
-
 export default App;
