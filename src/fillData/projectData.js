@@ -28,6 +28,26 @@ const projectData = [
         "gitBack": "https://github.com/Domitalk/SecondBackend", 
         "liveSite": "",
         "bloglink": ""
+    },
+    {
+        "imageUrl": "", 
+        "header": "example 1", 
+        "description": "asdf", 
+        "demoLink": "",
+        "gitFront": "https://github.com/Domitalk/SecondRPG",
+        "gitBack": "https://github.com/Domitalk/SecondBackend", 
+        "liveSite": "",
+        "bloglink": ""
+    },
+    {
+        "imageUrl": "", 
+        "header": "example 2 ", 
+        "description": "asdf", 
+        "demoLink": "",
+        "gitFront": "https://github.com/Domitalk/SecondRPG",
+        "gitBack": "https://github.com/Domitalk/SecondBackend", 
+        "liveSite": "",
+        "bloglink": ""
     }
 ]
 
