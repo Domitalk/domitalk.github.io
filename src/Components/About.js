@@ -21,6 +21,10 @@ import { Email } from '@styled-icons/material-sharp/Email'
 
 function About() {
     const profilePicture = "https://domitalk.s3.us-east-2.amazonaws.com/20200923_152629.jpg"
+    const resumeJPG = "https://domitalk.s3.us-east-2.amazonaws.com/Dominic+Chu+Resume+Software+Engineer+JPG.jpg"
+    const resumeDOCX = "https://domitalk.s3.us-east-2.amazonaws.com/Dominic+Chu+Resume+Software+Engineer+DOCX.docx"
+    const resumePDF = "https://domitalk.s3.us-east-2.amazonaws.com/Dominic+Chu+Resume+Software+Engineer+PDF.pdf"
+    const googleDOCS ="https://docs.google.com/document/d/1NIa5ZVRZTa2KpelYLzEQHIvu6CuaSntAFxr3RM3QhUk/edit?usp=sharing"
 
     const GithubIcon = styled(Github)`
         color: black
@@ -61,15 +65,24 @@ function About() {
 
                     <Card className="my-1">
                         <Card.Header>Resume</Card.Header>
-                        <Card.Img variant="top" src="https://images.template.net/wp-content/uploads/2018/11/Free-Blank-Resume-Template.jpg" />
+                        <Card.Img variant="top" src={resumeJPG} />
                         <Card.Body>
                             {/* onClick download the files */}
-                            <Button variant="outline-primary" className="mx-1 my-1">
-                                DOCX
-                            </Button>
-                            <Button variant="outline-primary" className="mx-1 my-1">
-                                PDF
-                            </Button>
+                            <a href={resumeDOCX} target="_blank" >
+                                <Button variant="outline-primary" className="mx-1 my-1">
+                                    DOCX
+                                </Button>
+                            </a>
+                            <a href={resumePDF} target="_blank" >
+                                <Button variant="outline-primary" className="mx-1 my-1">
+                                    PDF
+                                </Button>
+                            </a>
+                            <a href={googleDOCS} target="_blank" >
+                                <Button variant="outline-primary" classname="mx-1 my-1">
+                                    Google Docs
+                                </Button>
+                            </a>
                         </Card.Body>
                     </Card>
                 </Col>
