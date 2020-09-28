@@ -10,6 +10,7 @@ import projectData from '../fillData/projectData.js'
 function ProjectsContainer() {
     const [projectsToShow, setProjectsToShow] = useState([])
     const [count, setCount] = useState(1)
+    const [buttonToggle, setButtonToggle] = useState(true)
 
     const buttonStyle = {
         display: "flex", 
@@ -18,25 +19,44 @@ function ProjectsContainer() {
     }
 
     useEffect(() => {
-        setProjectsToShow(projectData.slice(0, 3))
+        // setProjectsToShow(projectData.slice(3, 0))
+        // console.log("projectsToShow", projectsToShow)
     }, [])
 
     const handleShowMoreProjects = () => {
-        const newSliceEnd = (count * 3) + 3
-        setProjectsToShow(
-            projectData.slice(0, newSliceEnd)
-        )
         setCount(count + 1)
+        const newSliceEnd = (count * 3)
+        setProjectsToShow(
+            projectData.slice(3, newSliceEnd)
+        )
+    }
+
+    const mapMoreProjects = () => {
+        return projectsToShow.map((project => {
+            return (
+                <Col xs={12} md={12} lg={12}>
+                    <Project project={project}/>
+                </Col>
+            )
+        }))
     }
 
     const mapAllProjects = () => {
-        return projectsToShow.map((project) => {
+        return projectData.slice(0, 3).map((project) => {
             return (
                 <Col xs={12} md={12} lg={12}>
                     <Project project={project}/>
                 </Col>
             )
         })
+    }
+
+    const showButton = () => {
+        return (
+            <Button onClick={handleShowMoreProjects}>
+                Load More
+            </Button>
+        )
     }
 
     return (
@@ -60,10 +80,11 @@ function ProjectsContainer() {
                 {mapAllProjects()}
             </Row>
             <div style={buttonStyle}>
-                <Button onClick={handleShowMoreProjects}>
-                    Load More
-                </Button>
+                {showButton()}
             </div>
+            <Row>
+                {mapMoreProjects()}
+            </Row>
         </Container>
     )
 }
