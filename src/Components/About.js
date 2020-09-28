@@ -104,16 +104,16 @@ function About() {
                     <Card className="my-1">
                         <Card.Header>Links</Card.Header>
                         <Card.Body id="spaced-links">
-                            <a href="http://github.com/domitalk" target="_blank" >
+                            <a href="http://github.com/domitalk" target="_blank" rel="noopener noreferrer" >
                                 <GithubIcon size="48" /> 
                             </a> 
-                            <a href="https://www.linkedin.com/in/dominic-m-chu" target="_blank">
+                            <a href="https://www.linkedin.com/in/dominic-m-chu" target="_blank" rel="noopener noreferrer">
                                 <LinkedinIcon size="48" /> 
                             </a> 
-                            <a href="https://medium.com/@dominic.m.chu" target="_blank">
+                            <a href="https://medium.com/@dominic.m.chu" target="_blank" rel="noopener noreferrer">
                                 <MediumIcon size="48" /> 
                             </a>
-                            <a ref={target} onClick={() => setShow(!show)}>
+                            <a href={target} onClick={() => setShow(!show)}>
                                 <EmailIcon size="48" />
                             </a>
                             <Overlay target={target.current} show={show} placement="top">

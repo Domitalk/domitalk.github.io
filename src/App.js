@@ -6,8 +6,8 @@ import ProjectsContainer from './Containers/ProjectsContainer.js'
 import BlogsContainer from './Containers/BlogsContainer.js'
 import About from './Components/About'
 import {
-  Switch,
-  Route, 
+  // Switch,
+  // Route, 
   BrowserRouter as Router
 } from 'react-router-dom'
 import ScrollToTop from './Utility/ScrollToTop'
