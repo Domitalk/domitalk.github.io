@@ -7,9 +7,8 @@ import Project from '../Components/Project'
 import projectData from '../fillData/projectData.js'
 // import Card from 'react-bootstrap/Card'
 
-function ProjectsContainer() {
+function ProjectsContainer(props) {
     const [projectsToShow, setProjectsToShow] = useState([])
-    const [count, setCount] = useState(1)
     const [buttonToggle, setButtonToggle] = useState(true)
 
     const buttonStyle = {
@@ -18,17 +17,9 @@ function ProjectsContainer() {
         alignItems: "center"
     }
 
-    useEffect(() => {
-        // setProjectsToShow(projectData.slice(3, 0))
-        // console.log("projectsToShow", projectsToShow)
-    }, [])
-
     const handleShowMoreProjects = () => {
-        setCount(count + 1)
-        const newSliceEnd = (count * 3)
-        setProjectsToShow(
-            projectData.slice(3, newSliceEnd)
-        )
+        setProjectsToShow(props.projectData.slice(3))
+        setButtonToggle(false)
     }
 
     const mapMoreProjects = () => {
@@ -42,7 +33,7 @@ function ProjectsContainer() {
     }
 
     const mapAllProjects = () => {
-        return projectData.slice(0, 3).map((project) => {
+        return props.projectData.slice(0, 3).map((project) => {
             return (
                 <Col xs={12} md={12} lg={12}>
                     <Project project={project}/>
@@ -51,12 +42,8 @@ function ProjectsContainer() {
         })
     }
 
-    const showButton = () => {
-        return (
-            <Button onClick={handleShowMoreProjects}>
-                Load More
-            </Button>
-        )
+    const showMoreButton = () => {
+            return buttonToggle ? <Button onClick={handleShowMoreProjects}>Load More</Button> : null
     }
 
     return (
@@ -66,7 +53,7 @@ function ProjectsContainer() {
             </Row>
             <Row> 
                 <Col xs={{spand:12, order: 1}} md={{ span: 12, order: 1}} lg={{ span:12, order: 1}}>
-                    <h3 className="text-center">Projects</h3>
+                    <h3 className="text-center">{props.header}</h3>
 
                     {/* <Card >
                         <Card.Text as="h3" className="text-center">Recent Projects</Card.Text>
@@ -80,7 +67,7 @@ function ProjectsContainer() {
                 {mapAllProjects()}
             </Row>
             <div style={buttonStyle}>
-                {showButton()}
+                {showMoreButton()}
             </div>
             <Row>
                 {mapMoreProjects()}

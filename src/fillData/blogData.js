@@ -28,6 +28,16 @@ const blogData = [
         "gitBack": "", 
         "liveSite": "",
         "bloglink": "https://medium.com/better-programming/infinite-scrolling-in-react-839bbade153f?source=friends_link&sk=e72657815ec6db5f009da92c7d1c2aae"
+    } ,
+    {
+        "imageUrl": "https://miro.medium.com/max/1400/1*5Kn53lcXoZHqyCENBG6_Cg.jpeg", 
+        "header": "How to Build Infinite Scroll in React", 
+        "description": "Building out a Infinite Scroll in React without any libraries so you can learn what is happening with the listeners. Published on Better Programming.", 
+        "demoLink": "",
+        "gitFront": "",
+        "gitBack": "", 
+        "liveSite": "",
+        "bloglink": "https://medium.com/better-programming/infinite-scrolling-in-react-839bbade153f?source=friends_link&sk=e72657815ec6db5f009da92c7d1c2aae"
     } 
 ]
 
