@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -40,9 +40,6 @@ function About(props) {
         color: black
     `
 
-    const [show, setShow] = useState(false)
-    const target = useRef(null)
-
     const renderToolTip = (props) => {
         return (
             <Tooltip id="button-tooltip" {...props}>
@@ -58,8 +55,9 @@ function About(props) {
             </Row>
             <Row> 
                 <Col xs={{spand:12, order: 1}} sm={{ span: 12, order: 1}} md={{ span: 12, order: 1}} lg={{ span:12, order: 1}}>
-                        <h3 className="text-center">About Me</h3>
+                        <h2 className="text-center">About</h2>
                 </Col>
+                <br />
             </Row>
             <Row>
                 <Col xs={{ span: 12, order: 12 }} sm={{ span: 12, order: 12 }} md={{ span: 12, order: 6 }} lg={{ span: 4, order: 2 }}> 
@@ -90,22 +88,6 @@ function About(props) {
                                     >
                                         <EmailIcon size="48" />
                                     </OverlayTrigger>
-                                    {/* <Overlay target={target.current} show={show} placement="top">
-                                        {({ placement, arrowProps, show: _show, popper, ...props }) => (
-                                            <div
-                                                {...props}
-                                                style={{
-                                                    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-                                                    padding: '2px 10px',
-                                                    color: 'white',
-                                                    borderRadius: 3,
-                                                    ...props.style,
-                                                }}
-                                            >
-                                                dominic.m.chu@gmail.com
-                                            </div>
-                                        )}
-                                    </Overlay> */}
                                 </Card.Body>
                             </Card>
                             <Card className="my-1">
@@ -120,12 +102,6 @@ function About(props) {
                                             <Redux size="35" /> 
                                             <Java size="35" />
                                         </div>
-                                        {/* <p>
-                                            JavaScript, React.js, Ruby, Rails, Java, and SQL.
-                                        </p> */}
-                                        {/* <p>
-                                            My coding journey started with Ruby and after learning how to make a backend with Rails I dove into JavaScript. Recently I've been making applications with React.js and learning Java on my own. 
-                                        </p> */}
                                     </Card.Text>
                                 </Card.Body>
                             </Card>

@@ -22,9 +22,7 @@ function App() {
         <About />
         <ProjectsContainer projectData={projectData} header={"Projects"} />
         <ProjectsContainer projectData={blogData} header={"Blogs"}/>
-        {/* <BlogsContainer /> */}
         <div className="empty"/>
-
       </Router>
   );
 }

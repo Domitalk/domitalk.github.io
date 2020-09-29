@@ -1,13 +1,18 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
+import Collapse from 'react-bootstrap/Collapse'
+
 import Project from '../Components/Project'
 
 function ProjectsContainer(props) {
-    const [projectsToShow, setProjectsToShow] = useState([])
-    const [buttonToggle, setButtonToggle] = useState(true)
+    // const [projectsToShow, setProjectsToShow] = useState([])
+    const [buttonToggle, setButtonToggle] = useState(false)
+    // const [open, setOpen] = useState(false)
+
+    // const projectsToShow = props.projectData.slice(3)
 
     const buttonStyle = {
         display: "flex", 
@@ -16,12 +21,13 @@ function ProjectsContainer(props) {
     }
 
     const handleShowMoreProjects = () => {
-        setProjectsToShow(props.projectData.slice(3))
-        setButtonToggle(false)
+        // setProjectsToShow(props.projectData.slice(3))
+        setButtonToggle(true)
+        // setOpen(true)
     }
 
     const mapMoreProjects = () => {
-        return projectsToShow.map((project => {
+        return props.projectData.slice(3).map((project => {
             return (
                 <Col xs={12} md={12} lg={12}>
                     <Project project={project}/>
@@ -41,7 +47,7 @@ function ProjectsContainer(props) {
     }
 
     const showMoreButton = () => {
-            return buttonToggle ? <Button onClick={handleShowMoreProjects}>Load More</Button> : null
+            return buttonToggle ? null : <Button onClick={handleShowMoreProjects}>Load More</Button>
     }
 
     return (
@@ -51,8 +57,9 @@ function ProjectsContainer(props) {
             </Row>
             <Row> 
                 <Col xs={{spand:12, order: 1}} md={{ span: 12, order: 1}} lg={{ span:12, order: 1}}>
-                    <h3 className="text-center">{props.header}</h3>
+                    <h2 className="text-center">{props.header}</h2>
                 </Col>
+                <br />
             </Row>
             <Row>
                 {mapAllProjects()}
@@ -60,9 +67,14 @@ function ProjectsContainer(props) {
             <div style={buttonStyle}>
                 {showMoreButton()}
             </div>
-            <Row>
+            <Collapse in={buttonToggle} > 
+                <Row>
+                    {mapMoreProjects()}
+                </Row>
+            </Collapse>
+            {/* <Row>
                 {mapMoreProjects()}
-            </Row>
+            </Row> */}
         </Container>
     )
 }

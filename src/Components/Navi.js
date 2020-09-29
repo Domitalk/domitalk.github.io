@@ -21,18 +21,6 @@ function Navi() {
             </Navbar>
         </>
     )
-    // return (
-    //     <>
-    //         <Navbar static="top" bg="light" variant="light">                
-    //             <Navbar.Brand >Dominic Chu</Navbar.Brand>
-    //             <Nav className="mr-auto">
-    //                 <Nav.Link as={Link} to="/portfolio">Home</Nav.Link>
-    //                 <Nav.Link as={Link} to="/portfolio/projects">Projects</Nav.Link>
-    //                 <Nav.Link as={Link} to="/portfolio/about">About</Nav.Link>
-    //             </Nav>
-    //         </Navbar>
-    //     </>
-    // )
 }
 
 export default Navi; 
