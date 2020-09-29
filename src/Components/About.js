@@ -4,7 +4,8 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
-import Overlay from 'react-bootstrap/Overlay'
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
+import Tooltip from 'react-bootstrap/Tooltip'
 // import Tooltip from 'react-boostrap/Tooltip'
 
 import styled from 'styled-components'
@@ -42,6 +43,14 @@ function About(props) {
     const [show, setShow] = useState(false)
     const target = useRef(null)
 
+    const renderToolTip = (props) => {
+        return (
+            <Tooltip id="button-tooltip" {...props}>
+                dominic.m.chu@gmail.com
+            </Tooltip>
+        )
+    }
+
     return (
         <Container id="About">
             <Row>
@@ -74,10 +83,14 @@ function About(props) {
                                     <a href="https://medium.com/@dominic.m.chu" target="_blank" rel="noopener noreferrer">
                                         <MediumIcon size="48" /> 
                                     </a>
-                                    <a ref={target} onClick={() => setShow(!show)}>
+                                    <OverlayTrigger 
+                                        placement="top" 
+                                        delay={{ show: 500, hide: 3000 }}
+                                        overlay={renderToolTip}
+                                    >
                                         <EmailIcon size="48" />
-                                    </a>
-                                    <Overlay target={target.current} show={show} placement="top">
+                                    </OverlayTrigger>
+                                    {/* <Overlay target={target.current} show={show} placement="top">
                                         {({ placement, arrowProps, show: _show, popper, ...props }) => (
                                             <div
                                                 {...props}
@@ -92,7 +105,7 @@ function About(props) {
                                                 dominic.m.chu@gmail.com
                                             </div>
                                         )}
-                                    </Overlay>
+                                    </Overlay> */}
                                 </Card.Body>
                             </Card>
                             <Card className="my-1">
