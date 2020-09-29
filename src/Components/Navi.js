@@ -14,9 +14,9 @@ function Navi() {
             <Navbar fixed="top" bg="light" variant="light">
                 <Navbar.Brand as={AnchorLink} href="#Home">Dominic M. Chu</Navbar.Brand>
                 <Nav className="mr-auto">
-                    <Nav.Link as={AnchorLink} href="#About">About Me</Nav.Link>
+                    <Nav.Link as={AnchorLink} href="#About">About</Nav.Link>
                     <Nav.Link as={AnchorLink} href="#Projects">Projects</Nav.Link>
-                    <Nav.Link as={AnchorLink} href="#Blogs">Blog Posts</Nav.Link>
+                    <Nav.Link as={AnchorLink} href="#Blogs">Blogs</Nav.Link>
                 </Nav>
             </Navbar>
         </>

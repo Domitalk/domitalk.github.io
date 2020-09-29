@@ -64,13 +64,13 @@ function About(props) {
             <Row>
                 <Col xs={{ span: 12, order: 12 }} sm={{ span: 12, order: 12 }} md={{ span: 12, order: 6 }} lg={{ span: 4, order: 2 }}> 
                     <Row>
-                        <Col xs={{ span: 8, order: 1, offset: 2}} sm={{ span: 8, order: 1, offset: 2 }} md={{ span: 6, order: 1, offset: 0 }} lg={{ }} >
+                        <Col xs={{ span: 10, order: 1, offset: 1 }} sm={{ span: 10, order: 1, offset: 1 }} md={{ span: 6, order: 1, offset: 0 }} lg={{ }} >
                             <Card className="my-1">
                                 <Card.Header>Dominic M. Chu</Card.Header>
                                 <Card.Img  src={profilePicture} />
                             </Card>
                         </Col>
-                        <Col xs={{ span: 8, order: 12, offset: 2}} sm={{ span: 12, order: 12, offset: 0 }} md={{ span: 6, order: 12 }} lg={{ }} >
+                        <Col xs={{ span: 12, order: 12, offset: 0 }} sm={{ span: 12, order: 12, offset: 0 }} md={{ span: 6, order: 12 }} lg={{ }} >
                             <Card className="my-1">
                                 <Card.Header>Links</Card.Header>
                                 <Card.Body id="spaced-links">
