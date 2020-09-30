@@ -51,7 +51,7 @@ function ProjectsContainer(props) {
     }
 
     return (
-        <Container id="Projects">
+        <Container id={props.header}>
             <Row>
                 <div className="empty"/>
             </Row>

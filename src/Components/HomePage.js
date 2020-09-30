@@ -1,18 +1,22 @@
 import React from 'react';
-// import Jumbotron from 'react-bootstrap/Jumbotron';
-// import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
+import useWindowDimensions from '../Utility/UseWindowDimensions';
 
 function HomePage() {
     const imgUrl = "https://domitalk.s3.us-east-2.amazonaws.com/20200923_151615.jpg"
+    const { height, width } = useWindowDimensions();
+
+
     return (
         <>
             <Row id="Home">
                 <div className="empty"/>
             </Row>
             <Image src={imgUrl} fluid />
+            <div>
+                width: {width} ~ height: {height}
+            </div>
         </>
     )
 }
