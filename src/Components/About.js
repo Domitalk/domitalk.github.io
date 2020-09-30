@@ -20,8 +20,11 @@ import { Linkedin } from '@styled-icons/simple-icons/Linkedin'
 import { Medium } from '@styled-icons/simple-icons/Medium'
 import { Email } from '@styled-icons/material-sharp/Email'
 
+import profileImageLarge from '../assets/images/profile.jpg'
+
+
 function About(props) {
-    const profilePicture = "https://domitalk.s3.us-east-2.amazonaws.com/20200923_152629.jpg"
+    // const profilePicture = "https://domitalk.s3.us-east-2.amazonaws.com/20200923_152629.jpg"
     const resumeJPG = "https://domitalk.s3.us-east-2.amazonaws.com/Dominic+Chu+Resume+Software+Engineer+JPG.jpg"
     const resumeDOCX = "https://domitalk.s3.us-east-2.amazonaws.com/Dominic+Chu+Resume+Software+Engineer+DOCX.docx"
     const resumePDF = "https://domitalk.s3.us-east-2.amazonaws.com/Dominic+Chu+Resume+Software+Engineer+PDF.pdf"
@@ -65,7 +68,7 @@ function About(props) {
                         <Col xs={{ span: 10, order: 1, offset: 1 }} sm={{ span: 10, order: 1, offset: 1 }} md={{ span: 6, order: 1, offset: 0 }} lg={{ }} >
                             <Card className="my-1">
                                 <Card.Header>Dominic M. Chu</Card.Header>
-                                <Card.Img  src={profilePicture} />
+                                <Card.Img  src={profileImageLarge} />
                             </Card>
                         </Col>
                         <Col xs={{ span: 12, order: 12, offset: 0 }} sm={{ span: 12, order: 12, offset: 0 }} md={{ span: 6, order: 12 }} lg={{ }} >
