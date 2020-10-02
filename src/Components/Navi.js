@@ -3,16 +3,8 @@ import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 // import { Link } from 'react-router-dom'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-// import Color from '../Constants/Color.js'
-
-
-
 
 function Navi() {
-
-    // const navbarStyle = {
-    //     backgroundColor: Color.three
-    // }
 
     return (
         <>
