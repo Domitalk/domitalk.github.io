@@ -14,9 +14,15 @@ import ScrollToTop from './Utility/ScrollToTop'
 import projectData from './fillData/projectData.js'
 import blogData from './fillData/blogData.js'
 
+import Color from './Constants/Color.js'
+
+const appStyle = {
+    backgroundColor: Color.one
+}
+
 function App() {
   return (
-      <Router>
+      <Router style={appStyle} >
         <Navi />
         <ScrollToTop />
         <HomePage />

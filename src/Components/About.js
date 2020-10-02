@@ -8,6 +8,8 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Tooltip from 'react-bootstrap/Tooltip'
 // import Tooltip from 'react-boostrap/Tooltip'
 
+
+
 import styled from 'styled-components'
 import { Javascript } from '@styled-icons/simple-icons/Javascript'
 import { ReactLogo } from '@styled-icons/simple-icons/ReactLogo'
@@ -52,6 +54,7 @@ function About(props) {
     }
 
     return (
+
         <Container id="About">
             <Row>
                 <div className="empty"/>

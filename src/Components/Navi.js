@@ -3,15 +3,25 @@ import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 // import { Link } from 'react-router-dom'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+// import Color from '../Constants/Color.js'
 
 
 
 
 function Navi() {
 
+    // const navbarStyle = {
+    //     backgroundColor: Color.three
+    // }
+
     return (
         <>
-            <Navbar fixed="top" bg="light" variant="light">
+            <Navbar 
+                fixed="top" 
+                bg="light" 
+                variant="light"
+                // style={navbarStyle}
+            >
                 <Navbar.Brand as={AnchorLink} href="#Home">Dominic M. Chu</Navbar.Brand>
                 <Nav className="mr-auto">
                     <Nav.Link as={AnchorLink} href="#About">About</Nav.Link>
