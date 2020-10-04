@@ -6,6 +6,8 @@ import Button from 'react-bootstrap/Button'
 import Collapse from 'react-bootstrap/Collapse'
 
 import Project from '../Components/Project'
+import Fade from 'react-reveal/Fade';
+
 
 function ProjectsContainer(props) {
     // const [projectsToShow, setProjectsToShow] = useState([])
@@ -47,10 +49,11 @@ function ProjectsContainer(props) {
     }
 
     const showMoreButton = () => {
-            return buttonToggle ? null : <Button onClick={handleShowMoreProjects}>Load More</Button>
+            return buttonToggle ? null : <Button onClick={handleShowMoreProjects} variant="outline-primary">Load More</Button>
     }
 
     return (
+        <Fade bottom>
         <Container id={props.header}>
             <div className="empty"/>
 
@@ -75,6 +78,7 @@ function ProjectsContainer(props) {
                 {mapMoreProjects()}
             </Row> */}
         </Container>
+        </Fade>
     )
 }
 

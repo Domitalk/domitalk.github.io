@@ -46,7 +46,7 @@ function Project(props) {
 
     return (
         <Jumbotron fluid >
-            <Container>
+            <Container >
                 <Row>
                     <Col xs={{ span: 12, order: 1}} md={{ span: 6, order: 1}} lg={{ span: 5, order: 1}}>
                         <Image src={props.project.imageUrl} thumbnail /> 

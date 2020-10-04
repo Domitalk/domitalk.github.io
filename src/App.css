@@ -11,3 +11,7 @@ div.empty {
     display: flex;
     justify-content: space-around;
 }
+
+.display-card {
+    background: #788C71;
+}

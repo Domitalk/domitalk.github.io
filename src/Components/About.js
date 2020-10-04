@@ -8,7 +8,7 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Tooltip from 'react-bootstrap/Tooltip'
 // import Tooltip from 'react-boostrap/Tooltip'
 
-
+import Fade from 'react-reveal/Fade';
 
 import styled from 'styled-components'
 import { Javascript } from '@styled-icons/simple-icons/Javascript'
@@ -54,17 +54,19 @@ function About(props) {
     }
 
     return (
-
         <Container id="About">
             <Row>
                 <div className="empty"/>
             </Row>
+            <Fade bottom>
             <Row> 
                 <Col xs={{spand:12, order: 1}} sm={{ span: 12, order: 1}} md={{ span: 12, order: 1}} lg={{ span:12, order: 1}}>
-                        <h2 className="text-center">About</h2>
+                    <h2 className="text-center">About</h2>
                 </Col>
                 <br />
             </Row>
+            </Fade>
+            <Fade bottom>
             <Row>
                 <Col xs={{ span: 12, order: 12 }} sm={{ span: 12, order: 12 }} md={{ span: 12, order: 6 }} lg={{ span: 4, order: 2 }}> 
                     <Row>
@@ -139,6 +141,7 @@ function About(props) {
                     </Card>
                 </Col>
             </Row>
+            </Fade>
         </Container>
     )
 }
