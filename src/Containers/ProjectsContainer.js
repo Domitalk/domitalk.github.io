@@ -10,11 +10,7 @@ import Fade from 'react-reveal/Fade';
 
 
 function ProjectsContainer(props) {
-    // const [projectsToShow, setProjectsToShow] = useState([])
     const [buttonToggle, setButtonToggle] = useState(false)
-    // const [open, setOpen] = useState(false)
-
-    // const projectsToShow = props.projectData.slice(3)
 
     const buttonStyle = {
         display: "flex", 
@@ -23,9 +19,7 @@ function ProjectsContainer(props) {
     }
 
     const handleShowMoreProjects = () => {
-        // setProjectsToShow(props.projectData.slice(3))
         setButtonToggle(true)
-        // setOpen(true)
     }
 
     const mapMoreProjects = () => {
@@ -54,30 +48,27 @@ function ProjectsContainer(props) {
 
     return (
         <Fade bottom>
-        <Container id={props.header}>
-            <div className="empty"/>
+            <Container id={props.header}>
+                <div className="empty"/>
 
-            <Row> 
-                <Col xs={{spand:12, order: 1}} md={{ span: 12, order: 1}} lg={{ span:12, order: 1}}>
-                    <h2 className="text-center">{props.header}</h2>
-                </Col>
-                <br />
-            </Row>
-            <Row>
-                {mapAllProjects()}
-            </Row>
-            <div style={buttonStyle}>
-                {showMoreButton()}
-            </div>
-            <Collapse in={buttonToggle} > 
-                <Row>
-                    {mapMoreProjects()}
+                <Row> 
+                    <Col xs={{spand:12, order: 1}} md={{ span: 12, order: 1}} lg={{ span:12, order: 1}}>
+                        <h2 className="text-center">{props.header}</h2>
+                    </Col>
+                    <br />
                 </Row>
-            </Collapse>
-            {/* <Row>
-                {mapMoreProjects()}
-            </Row> */}
-        </Container>
+                <Row>
+                    {mapAllProjects()}
+                </Row>
+                <div style={buttonStyle}>
+                    {showMoreButton()}
+                </div>
+                <Collapse in={buttonToggle} > 
+                    <Row>
+                        {mapMoreProjects()}
+                    </Row>
+                </Collapse>
+            </Container>
         </Fade>
     )
 }
