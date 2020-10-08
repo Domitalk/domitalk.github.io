@@ -11,19 +11,16 @@ function HomePage() {
     // const imgUrl = "https://domitalk.s3.us-east-2.amazonaws.com/20200923_151615.jpg"
     const { height, width } = useWindowDimensions();
 
-
     return (
         <>
             <Fade left >
-
-            <Row id="Home">
-                <div className="empty"/>
-            </Row>
-            <Image src={bannerImageLarge} fluid />
-            {/* <div>
-                width: {width} ~ height: {height}
-            </div> */}
-
+                <Row id="Home">
+                    <div className="empty"/>
+                </Row>
+                <Image src={bannerImageLarge} fluid />
+                {/* <div>
+                    width: {width} ~ height: {height}
+                </div> */}
             </Fade>
         </>
     )

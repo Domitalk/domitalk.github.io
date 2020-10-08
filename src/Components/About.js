@@ -24,7 +24,6 @@ import { Email } from '@styled-icons/material-sharp/Email'
 
 import profileImageLarge from '../assets/images/profile.jpg'
 
-
 function About(props) {
     // const profilePicture = "https://domitalk.s3.us-east-2.amazonaws.com/20200923_152629.jpg"
     const resumeJPG = "https://domitalk.s3.us-east-2.amazonaws.com/Dominic+Chu+Resume+Software+Engineer+JPG.jpg"
@@ -59,88 +58,88 @@ function About(props) {
                 <div className="empty"/>
             </Row>
             <Fade bottom>
-            <Row> 
-                <Col xs={{spand:12, order: 1}} sm={{ span: 12, order: 1}} md={{ span: 12, order: 1}} lg={{ span:12, order: 1}}>
-                    <h2 className="text-center">About</h2>
-                </Col>
-                <br />
-            </Row>
+                <Row> 
+                    <Col xs={{spand:12, order: 1}} sm={{ span: 12, order: 1}} md={{ span: 12, order: 1}} lg={{ span:12, order: 1}}>
+                        <h2 className="text-center">About</h2>
+                    </Col>
+                    <br />
+                </Row>
             </Fade>
             <Fade bottom>
-            <Row>
-                <Col xs={{ span: 12, order: 12 }} sm={{ span: 12, order: 12 }} md={{ span: 12, order: 6 }} lg={{ span: 4, order: 2 }}> 
-                    <Row>
-                        <Col xs={{ span: 10, order: 1, offset: 1 }} sm={{ span: 10, order: 1, offset: 1 }} md={{ span: 6, order: 1, offset: 0 }} lg={{ }} >
-                            <Card className="my-1">
-                                <Card.Header>Dominic M. Chu</Card.Header>
-                                <Card.Img  src={profileImageLarge} />
-                            </Card>
-                        </Col>
-                        <Col xs={{ span: 12, order: 12, offset: 0 }} sm={{ span: 12, order: 12, offset: 0 }} md={{ span: 6, order: 12 }} lg={{ }} >
-                            <Card className="my-1">
-                                <Card.Header>Links</Card.Header>
-                                <Card.Body id="spaced-links">
-                                    <a href="http://github.com/domitalk" target="_blank" rel="noopener noreferrer" >
-                                        <GithubIcon size="48" /> 
-                                    </a> 
-                                    <a href="https://www.linkedin.com/in/dominic-m-chu" target="_blank" rel="noopener noreferrer">
-                                        <LinkedinIcon size="48" /> 
-                                    </a> 
-                                    <a href="https://medium.com/@dominic.m.chu" target="_blank" rel="noopener noreferrer">
-                                        <MediumIcon size="48" /> 
-                                    </a>
-                                    <OverlayTrigger 
-                                        placement="top" 
-                                        delay={{ show: 500, hide: 3000 }}
-                                        overlay={renderToolTip}
-                                    >
-                                        <EmailIcon size="48" />
-                                    </OverlayTrigger>
-                                </Card.Body>
-                            </Card>
-                            <Card className="my-1">
-                                <Card.Header>Languages/Libraries</Card.Header>
-                                <Card.Body>
-                                    <Card.Text>
-                                        <div id="spaced-icons" >
-                                            <Javascript size="35" /> 
-                                            <ReactLogo size="35" /> 
-                                            <Ruby size="35" /> 
-                                            <Rubyonrails size="35" /> 
-                                            <Redux size="35" /> 
-                                            <Java size="35" />
-                                        </div>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                    </Row>
-                </Col>
-                <Col xs={{ span: 12, order: 1 }} sm={{ span: 12, order: 1 }} md={{ span: 12, order: 1 }} lg={{ span: 8, order: 1 }}>
-                    <Card className="my-1">
-                        <Card.Header>Resume</Card.Header>
-                        <Card.Img variant="top" src={resumeJPG} />
-                        <Card.Body>
-                            {/* onClick download the files */}
-                            <a href={resumeDOCX} target="_blank" rel="noopener noreferrer">
-                                <Button variant="outline-primary" className="mx-1 my-1">
-                                    DOCX
-                                </Button>
-                            </a>
-                            <a href={resumePDF} target="_blank" rel="noopener noreferrer">
-                                <Button variant="outline-primary" className="mx-1 my-1">
-                                    PDF
-                                </Button>
-                            </a>
-                            <a href={googleDOCS} target="_blank" rel="noopener noreferrer">
-                                <Button variant="outline-primary" classname="mx-1 my-1">
-                                    Google Docs
-                                </Button>
-                            </a>
-                        </Card.Body>
-                    </Card>
-                </Col>
-            </Row>
+                <Row>
+                    <Col xs={{ span: 12, order: 12 }} sm={{ span: 12, order: 12 }} md={{ span: 12, order: 6 }} lg={{ span: 4, order: 2 }}> 
+                        <Row>
+                            <Col xs={{ span: 10, order: 1, offset: 1 }} sm={{ span: 10, order: 1, offset: 1 }} md={{ span: 6, order: 1, offset: 0 }} lg={{ }} >
+                                <Card className="my-1">
+                                    <Card.Header>Dominic M. Chu</Card.Header>
+                                    <Card.Img  src={profileImageLarge} />
+                                </Card>
+                            </Col>
+                            <Col xs={{ span: 12, order: 12, offset: 0 }} sm={{ span: 12, order: 12, offset: 0 }} md={{ span: 6, order: 12 }} lg={{ }} >
+                                <Card className="my-1">
+                                    <Card.Header>Links</Card.Header>
+                                    <Card.Body id="spaced-links">
+                                        <a href="http://github.com/domitalk" target="_blank" rel="noopener noreferrer" >
+                                            <GithubIcon size="48" /> 
+                                        </a> 
+                                        <a href="https://www.linkedin.com/in/dominic-m-chu" target="_blank" rel="noopener noreferrer">
+                                            <LinkedinIcon size="48" /> 
+                                        </a> 
+                                        <a href="https://medium.com/@dominic.m.chu" target="_blank" rel="noopener noreferrer">
+                                            <MediumIcon size="48" /> 
+                                        </a>
+                                        <OverlayTrigger 
+                                            placement="top" 
+                                            delay={{ show: 500, hide: 3000 }}
+                                            overlay={renderToolTip}
+                                        >
+                                            <EmailIcon size="48" />
+                                        </OverlayTrigger>
+                                    </Card.Body>
+                                </Card>
+                                <Card className="my-1">
+                                    <Card.Header>Languages/Libraries</Card.Header>
+                                    <Card.Body>
+                                        <Card.Text>
+                                            <div id="spaced-icons" >
+                                                <Javascript size="35" /> 
+                                                <ReactLogo size="35" /> 
+                                                <Ruby size="35" /> 
+                                                <Rubyonrails size="35" /> 
+                                                <Redux size="35" /> 
+                                                <Java size="35" />
+                                            </div>
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                        </Row>
+                    </Col>
+                    <Col xs={{ span: 12, order: 1 }} sm={{ span: 12, order: 1 }} md={{ span: 12, order: 1 }} lg={{ span: 8, order: 1 }}>
+                        <Card className="my-1">
+                            <Card.Header>Resume</Card.Header>
+                            <Card.Img variant="top" src={resumeJPG} />
+                            <Card.Body>
+                                {/* onClick download the files */}
+                                <a href={resumeDOCX} target="_blank" rel="noopener noreferrer">
+                                    <Button variant="outline-primary" className="mx-1 my-1">
+                                        DOCX
+                                    </Button>
+                                </a>
+                                <a href={resumePDF} target="_blank" rel="noopener noreferrer">
+                                    <Button variant="outline-primary" className="mx-1 my-1">
+                                        PDF
+                                    </Button>
+                                </a>
+                                <a href={googleDOCS} target="_blank" rel="noopener noreferrer">
+                                    <Button variant="outline-primary" classname="mx-1 my-1">
+                                        Google Docs
+                                    </Button>
+                                </a>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
             </Fade>
         </Container>
     )
