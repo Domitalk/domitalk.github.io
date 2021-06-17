@@ -22,10 +22,10 @@ import { Email } from '@styled-icons/material-sharp/Email'
 
 function About(props) {
     const profilePicture = "https://domitalk.s3.us-east-2.amazonaws.com/20200923_152629.jpg"
-    const resumeJPG = "https://domitalk.s3.us-east-2.amazonaws.com/Dominic+Chu+Resume+Software+Engineer+JPG.jpg"
-    const resumeDOCX = "https://domitalk.s3.us-east-2.amazonaws.com/Dominic+Chu+Resume+Software+Engineer+DOCX.docx"
-    const resumePDF = "https://domitalk.s3.us-east-2.amazonaws.com/Dominic+Chu+Resume+Software+Engineer+PDF.pdf"
-    const googleDOCS ="https://docs.google.com/document/d/1NIa5ZVRZTa2KpelYLzEQHIvu6CuaSntAFxr3RM3QhUk/edit?usp=sharing"
+    const resumeJPG = "https://domitalk.s3.us-east-2.amazonaws.com/Dominic+Chu.jpg"
+    const resumeDOCX = "https://domitalk.s3.us-east-2.amazonaws.com/Dominic+Chu.docx"
+    const resumePDF = "https://domitalk.s3.us-east-2.amazonaws.com/Dominic+Chu.pdf"
+    const googleDOCS ="https://docs.google.com/document/d/10OnSfMBzO9WSVUuNYbHYWOH2yqsaYdUiI9powu2Rn3o/edit?usp=sharing"
 
     const GithubIcon = styled(Github)`
         color: black
